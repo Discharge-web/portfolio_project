@@ -1,0 +1,85 @@
+@font-face {
+  font-family: "Open Sans";
+  src: local("Open Sans Regular"), local("OpenSans-Regular"),
+  url("../fonts/OpenSansRegular.woff2") format("woff2"),
+  url("../fonts/OpenSansRegular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: local("Open Sans Bold"), local("OpenSans-Bold"),
+  url("../fonts/OpenSansBold.woff2") format("woff2"),
+  url("../fonts/OpenSansBold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: local("Open Sans Semi Bold"), local("OpenSans-SemiBold"),
+  url("../fonts/OpenSansSemiBold.woff2") format("woff2"),
+  url("../fonts/OpenSansSemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.page {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+
+/* global */
+:root {
+  --purple-primary: #9d5cd0;
+  --purple-dark: #7943a4;
+  --purple-light: #c283f3;
+  --purple-lighter: #d1a9f0;
+
+  --green: #30bf39;
+  --blue: #26a5e4;
+  --red: #d11616;
+
+  --black: #000;
+
+  --grey-darker: #333;
+  --grey-dark: #666;
+  --grey-primary: #999;
+  --grey-light: #cacaca;
+  --grey-lighter: #ececec;
+
+  --white: #fff;
+}
+
+/* header */
+/* hero */
+/* about */
+/* gallery */
+/* catalog */
+/* events */
+/* projects */
+/* contacts */
+/* footer */
