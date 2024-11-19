@@ -81,12 +81,15 @@ img {
 }
 
 .section-title {
+  margin: 0;
+  margin-bottom: 21px;
   font-weight: 400;
   font-size: 48px;
   color: var(--grey-darker);
 }
 
 .section-text {
+  margin: 0;
   font-weight: 400;
   font-size: 16px;
   line-height: 200%;
@@ -234,6 +237,15 @@ img {
 }
 
 /* about */
+.about__container {
+  padding-top: 85px;
+  padding-bottom: 85px;
+}
+
+.about__descr {
+  max-width: 1080px;
+}
+
 /* gallery */
 /* catalog */
 /* events */
