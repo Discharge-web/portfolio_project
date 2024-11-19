@@ -116,17 +116,6 @@ img {
   background-color: transparent;
 }
 
-.btn {
-  padding: 22px 33px;
-  border: 3px solid var(--purple-primary);
-  border-radius: 100px;
-  font-weight: 700;
-  font-size: 18px;
-  text-align: center;
-  color: var(--white);
-  background-color: var(--purple-primary);
-}
-
 /* header */
 .header {
   font-size: 0;
@@ -234,6 +223,54 @@ img {
   font-size: 18px;
   line-height: 167%;
   color: var(--white);
+}
+
+.btn {
+  position: relative;
+  padding: 22px 33px;
+  border: 3px solid var(--purple-primary);
+  border-radius: 100px;
+  font-weight: 700;
+  font-size: 18px;
+  text-align: center;
+  color: var(--white);
+  background-color: var(--purple-primary);
+  outline: none;
+  transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  left: -8px;
+  right: -8px;
+  bottom: -8px;
+  border-radius: 100px;
+  border: 2px solid var(--purple-light);
+  opacity: 0;
+  /* transition: opacity 0.3s ease-in-out; */
+}
+
+.btn:focus::before {
+  opacity: 1;
+}
+
+.btn:hover::before {
+  opacity: 0;
+}
+
+.btn:active::before {
+  opacity: 0;
+}
+
+.hero__btn:hover {
+  border-color: var(--purple-light);
+}
+
+.hero__btn:active {
+  border-color: var(--purple-lighter);
+  background-color: var(--purple-dark);
 }
 
 /* about */
