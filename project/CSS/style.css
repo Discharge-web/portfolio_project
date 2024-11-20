@@ -285,6 +285,7 @@ img {
 
 /* gallery */
 .gallery {
+  margin-bottom: 86px;
   background: var(--black) url("../img/gallery_bg.jpg") no-repeat center bottom;
   background-size: cover;
 }
@@ -381,9 +382,8 @@ img {
 }
 
 /* catalog */
-.catalog__container {
-  padding-top: 86px;
-  padding-bottom: 84px;
+.catalog {
+  margin-bottom: 84px;
 }
 
 .catalog__descr {
