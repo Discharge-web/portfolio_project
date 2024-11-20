@@ -431,7 +431,7 @@ img {
 
 /* events */
 .events {
-  margin-bottom: 80px;
+  margin-bottom: 85px;
 }
 
 .events__list {
@@ -513,5 +513,32 @@ img {
 }
 
 /* projects */
+.projects {
+  margin-bottom: 80px;
+}
+
+.projects__descr {
+  max-width: 1078px;
+  margin-bottom: 30px;
+}
+
+.projects__caption {
+  margin-bottom: 16px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 133%;
+  color: var(--grey-darker);
+}
+
+.projects__wrapper {
+  display: flex;
+  gap: 27px;
+}
+
+.projects__partner {
+  padding: 24px 28px;
+  border: 1px solid var(--grey-light);
+}
+
 /* contacts */
 /* footer */
