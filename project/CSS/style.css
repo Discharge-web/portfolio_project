@@ -302,6 +302,8 @@ img {
 .gallery__wrapper {
   display: flex;
   align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 30px 50px;
 }
 
 .gallery__checkboxes {
