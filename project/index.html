@@ -290,7 +290,42 @@
       </div>
     </section>
     <section class="contacts">
-      <div class="container"></div>
+      <div class="container contacts__container">
+        <div class="contacts__start">
+          <h3 class="contacts__caption">
+            Шоурум &#8470;&nbsp;4
+          </h3>
+          <address class="contacts__address">
+            Леонтьевский переулок, дом 5/1
+          </address>
+        </div>
+        <form class="contacts__form" action="https://jsonplaceholder.typicode.com/posts" method="post">
+          <div class="contacts__error">
+            <input type="text" name="name" placeholder="Имя*" aria-label="Введите имя" required maxlength="100" pattern="^[А-Яа-яЁё\s]+$" class="contacts__input">
+            <span class="contacts__error-text">Недопустимый формат</span>
+          </div>
+          <div class="contacts__error">
+            <input type="tel" name="phone" placeholder="Телефон*" aria-label="Введите номер телефона" required maxlength="11" pattern="7[0-9]{10}" class="contacts__input">
+            <span class="contacts__error-text">Недопустимый формат</span>
+          </div>
+          <button class="btn btn-reset btn--form" aria-label="Заказать обратный звонок">
+            Заказать обратный звонок
+          </button>
+        </form>
+        <div class="contacts__end">
+          <h3 class="contacts__caption contacts__caption--social">
+            Связаться в&nbsp;один клик
+          </h3>
+          <ul class="social-list list-reset">
+            <li class="social-list__item">
+              <a href="#" class="social-list__link social-list__link--whatsapp"></a>
+            </li>
+            <li class="social-list__item">
+              <a href="#" class="social-list__link social-list__link--telegram"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </section>
   </main>
   <footer class="footer">

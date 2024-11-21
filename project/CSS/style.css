@@ -236,7 +236,7 @@ img {
   color: var(--white);
   background-color: var(--purple-primary);
   outline: none;
-  transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
 .btn::before {
@@ -541,4 +541,152 @@ img {
 }
 
 /* contacts */
+.contacts__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding-top: 37px;
+  padding-bottom: 37px;
+}
+
+.contacts__caption {
+  margin: 0;
+  margin-bottom: 6px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 133%;
+  color: var(--grey-darker);
+}
+
+.contacts__form {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.contacts__input {
+  min-width: 270px;
+  padding: 8px 24px;
+  border: 1px solid var(--grey-darker);
+  border-radius: 100px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 200%;
+  color: var(--grey-darker);
+  outline: none;
+}
+
+.contacts__error {
+  position: relative;
+}
+
+/* .contacts__error {
+
+  top: -17px;
+  left: 24px;
+  font-weight: 400;
+  font-size: 12px;
+  color: var(--red);
+  user-select: none;
+  opacity: 0;
+  z-index: 10;
+} */
+
+.contacts__error-text {
+  position: absolute;
+  top: -17px;
+  left: 24px;
+  font-weight: 400;
+  font-size: 12px;
+  color: var(--red);
+  user-select: none;
+  opacity: 0;
+}
+
+.contacts__input::placeholder {
+  color: var(--grey-primary);
+}
+
+.contacts__input:focus {
+  background-color: var(--grey-lighter);
+}
+
+.contacts__input:hover {
+  background-color: var(--grey-lighter);
+}
+
+.contacts__input:invalid:not(:placeholder-shown) {
+  border-color: var(--red);
+}
+
+.contacts__input:invalid:not(:placeholder-shown) + .contacts__error-text {
+  opacity: 1;
+}
+
+.btn--form {
+  padding: 12px 33px;
+  color: var(--purple-primary);
+  background-color: transparent;
+  white-space: nowrap
+}
+
+.btn--form:focus::before {
+  border-color: var(--purple-primary);
+}
+
+.btn--form:hover {
+  color: var(--white);
+  background-color: var(--purple-primary);
+}
+
+.btn--form:active {
+  color: var(--white);
+  border-color: var(--purple-lighter);
+  background-color: var(--purple-dark);
+}
+
+.contacts__caption--social {
+  margin-bottom: 8px;
+}
+
+.social-list {
+  display: flex;
+  gap: 20px;
+  font-size: 0;
+}
+
+.social-list__link {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background: no-repeat center;
+  background-size: cover;
+  outline: none;
+  transition: opacity 0.2s ease-in-out, border 0.2s ease-in-out;
+}
+
+.social-list__link--whatsapp {
+  background-image: url("../img/whatsapp_icon.svg");
+}
+
+.social-list__link--telegram {
+  background-image: url("../img/telegram_icon.svg");
+}
+
+.social-list__link:focus {
+  opacity: 0.5;
+}
+
+.social-list__link:hover {
+  opacity: 0.5;
+}
+
+.social-list__link:active {
+  border-radius: 50%;
+  border: 1px solid var(--purple-primary);
+  opacity: 1;
+}
+
 /* footer */
