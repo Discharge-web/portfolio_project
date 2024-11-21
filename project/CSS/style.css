@@ -548,7 +548,7 @@ img {
   flex-wrap: wrap;
   gap: 30px;
   padding-top: 37px;
-  padding-bottom: 37px;
+  padding-bottom: 38px;
 }
 
 .contacts__caption {
@@ -581,18 +581,6 @@ img {
 .contacts__error {
   position: relative;
 }
-
-/* .contacts__error {
-
-  top: -17px;
-  left: 24px;
-  font-weight: 400;
-  font-size: 12px;
-  color: var(--red);
-  user-select: none;
-  opacity: 0;
-  z-index: 10;
-} */
 
 .contacts__error-text {
   position: absolute;
@@ -675,18 +663,53 @@ img {
   background-image: url("../img/telegram_icon.svg");
 }
 
-.social-list__link:focus {
+.contacts__social-link:focus {
   opacity: 0.5;
 }
 
-.social-list__link:hover {
+.contacts__social-link:hover {
   opacity: 0.5;
 }
 
-.social-list__link:active {
+.contacts__social-link:active {
   border-radius: 50%;
   border: 1px solid var(--purple-primary);
   opacity: 1;
 }
 
 /* footer */
+.footer {
+  background-color: var(--black);
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 49px;
+  padding-bottom: 48px;
+}
+
+.footer__social-list {
+  align-items: center;
+  gap: 29px;
+}
+
+.footer__social-link svg {
+  width: 45px;
+  height: 45px;
+  fill: var(--grey-light);
+  transition: fill 0.2s ease-in-out
+}
+
+.footer__social-link:focus svg {
+  fill: var(--white);
+}
+
+.footer__social-link:hover svg {
+  fill: var(--white);
+}
+
+.footer__social-link:active svg {
+  fill: var(--purple-primary);
+}
